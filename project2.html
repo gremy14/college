@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wonderful World of Cookies</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for the Inter font and a subtle background pattern */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3f0; /* Light cream background */
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-amber-800 shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-white tracking-tight">Cookie Haven</h1>
+            <nav>
+                <!-- Removed 'Bake Now!' link -->
+                <a href="#types" class="text-white hover:text-amber-200 transition duration-300 font-medium px-3 hidden sm:inline-block">Types</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:py-12">
+
+        <!-- Hero Section -->
+        <section class="mb-16 bg-white rounded-3xl shadow-2xl overflow-hidden md:flex md:items-center">
+            <div class="md:w-1/2 p-8 sm:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 leading-normal">
+                    Cookie Information
+                </h2>
+                <p class="text-gray-600 text-base mb-6">
+                    Cookies are a popular baked treat enjoyed worldwide. This page provides general information and highlights some of the most common and delicious types available.
+                </p>
+                <a href="#types" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full shadow-xl transition transform hover:scale-105 duration-300">
+                    View Cookie Types
+                </a>
+            </div>
+            <div class="md:w-1/2 h-64 md:h-96">
+                <!-- Placeholder image for a cookie spread -->
+                <img src="https://placehold.co/800x600/b87333/ffffff?text=Delicious+Cookie+Assortment"
+                     alt="A selection of delicious, freshly baked cookies."
+                     class="w-full h-full object-cover">
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Types of Cookies Section -->
+        <section id="types" class="mb-16">
+            <h2 class="text-4xl font-extrabold text-amber-900 text-center mb-10">
+                The Iconic Cookie Cast
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Cookie Card 1: Chocolate Chip -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-amber-200">
+                    <img src="https://placehold.co/400x250/654321/ffffff?text=Chocolate+Chip"
+                         alt="Classic chocolate chip cookie" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Chocolate Chip</h3>
+                        <p class="text-gray-600 text-sm">
+                            The undisputed champion. A soft, chewy dough loaded with melting chocolate pieces. A perfect balance of sweet and salty.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cookie Card 2: Oatmeal Raisin -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-amber-200">
+                    <img src="https://placehold.co/400x250/e0b987/ffffff?text=Oatmeal+Raisin"
+                         alt="A baked oatmeal raisin cookie" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Oatmeal Raisin</h3>
+                        <p class="text-gray-600 text-sm">
+                            A wholesome texture provided by oats, spiced with cinnamon and sweetened by plump, juicy raisins.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cookie Card 3: Snickerdoodle -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-amber-200">
+                    <img src="https://placehold.co/400x250/c8a2c8/ffffff?text=Snickerdoodle"
+                         alt="A snickerdoodle cookie dusted with cinnamon sugar" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Snickerdoodle</h3>
+                        <p class="text-gray-600 text-sm">
+                            A simple sugar cookie dough rolled in a delightful mix of cinnamon and sugar before baking.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cookie Card 4: Sugar Cookie -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-amber-200">
+                    <img src="https://placehold.co/400x250/ffc107/333333?text=Sugar+Cookie"
+                         alt="A decorated sugar cookie" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-2">Sugar Cookie</h3>
+                        <p class="text-gray-600 text-sm">
+                            The blank canvas of the cookie world—perfectly cut, baked, and ready to be decorated with icing and sprinkles.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Types of Cookies Section -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Cookie Haven. Baked with love and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
